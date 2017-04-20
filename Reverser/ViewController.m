@@ -53,7 +53,7 @@ const NSString *SBDGreetingMessage = @"Hello";
         make.top.equalTo(self.view.mas_top).with.offset(40);
         make.height.equalTo(@20);
         make.width.lessThanOrEqualTo(@40);
-        make.bottom.equalTo(self.sourceStringField.mas_top);
+        make.bottom.equalTo(self.resultLabel.mas_top);
 
     } ];
     
