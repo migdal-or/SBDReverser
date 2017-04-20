@@ -54,9 +54,11 @@ const NSString *SBDGreetingMessage = @"Hello";
         make.height.equalTo(@20);
         make.width.lessThanOrEqualTo(@40);
         make.bottom.equalTo(self.resultLabel.mas_top);
-
     } ];
-    
+    [self.resultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.mas_topLayoutGuideBottom).with.offset(64);
+        
+    }];
     
     [NSLayoutConstraint activateConstraints:self.view.constraints];
     
