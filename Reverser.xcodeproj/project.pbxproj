@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DB3AC71E9FFC50003763E3 /* SBDUpperCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DB3AC61E9FFC50003763E3 /* SBDUpperCase.m */; };
 		0C270A6A1E6196310099EBB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A691E6196310099EBB0 /* main.m */; };
 		0C270A6D1E6196310099EBB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A6C1E6196310099EBB0 /* AppDelegate.m */; };
 		0C270A701E6196310099EBB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A6F1E6196310099EBB0 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DB3AC51E9FFC50003763E3 /* SBDUpperCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDUpperCase.h; sourceTree = "<group>"; };
+		04DB3AC61E9FFC50003763E3 /* SBDUpperCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDUpperCase.m; sourceTree = "<group>"; };
 		0C270A651E6196310099EBB0 /* Reverser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reverser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C270A691E6196310099EBB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C270A6B1E6196310099EBB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				0C270A9E1E619D580099EBB0 /* SBDReverser.h */,
+				04DB3AC51E9FFC50003763E3 /* SBDUpperCase.h */,
+				04DB3AC61E9FFC50003763E3 /* SBDUpperCase.m */,
 				0C270A9F1E619D580099EBB0 /* SBDReverser.m */,
 			);
 			name = Services;
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C270A701E6196310099EBB0 /* ViewController.m in Sources */,
+				04DB3AC71E9FFC50003763E3 /* SBDUpperCase.m in Sources */,
 				0C270A6D1E6196310099EBB0 /* AppDelegate.m in Sources */,
 				0C270A6A1E6196310099EBB0 /* main.m in Sources */,
 				0C270AA01E619D580099EBB0 /* SBDReverser.m in Sources */,

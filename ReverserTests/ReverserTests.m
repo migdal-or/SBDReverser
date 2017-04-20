@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "SBDReverser.h"
+#import "SBDUpperCase.h"
 
 @interface ReverserTests : XCTestCase
 
@@ -38,6 +39,18 @@
 - (void)testReverseNil {
     NSString *sourceString = nil;
     XCTAssertTrue([SBDReverser reverseString: sourceString] == nil, @"Test reverser with nil.");
+}
+
+- (void)testCapitaliseText {
+    NSString *sourceString = @"Hello world!";
+    NSString *resultString = @"HELLO WORLD!";
+    XCTAssertTrue([[SBDUpperCase upperCase: sourceString] isEqualToString:resultString], @"Test reverser in normal case.");
+}
+
+- (void)testCapitaliseNil {
+    NSString *sourceString = @"";
+    NSString *resultString = @"";
+    XCTAssertTrue([[SBDUpperCase upperCase: sourceString] isEqualToString:resultString], @"Test reverser in normal case.");
 }
 
 @end
