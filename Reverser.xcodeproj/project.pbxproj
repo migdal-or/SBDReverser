@@ -18,6 +18,9 @@
 		0C270A8E1E6196320099EBB0 /* ReverserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A8D1E6196320099EBB0 /* ReverserUITests.m */; };
 		0C270AA01E619D580099EBB0 /* SBDReverser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A9F1E619D580099EBB0 /* SBDReverser.m */; };
 		0C270AA11E619D580099EBB0 /* SBDReverser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C270A9F1E619D580099EBB0 /* SBDReverser.m */; };
+		4B71905898D9915CC0EE3CEC /* libPods-Reverser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2016C10A347E437726FE15B7 /* libPods-Reverser.a */; };
+		91B037CF3EFDB0102880E8A3 /* libPods-ReverserUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71AE8DACF282DD56F7C42487 /* libPods-ReverserUITests.a */; };
+		97DD7FD34645FEDE58B5E7A6 /* libPods-ReverserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCACCE43FEA1CC276CB88777 /* libPods-ReverserTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,15 @@
 		0C270A8F1E6196320099EBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C270A9E1E619D580099EBB0 /* SBDReverser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBDReverser.h; sourceTree = "<group>"; };
 		0C270A9F1E619D580099EBB0 /* SBDReverser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBDReverser.m; sourceTree = "<group>"; };
+		2016C10A347E437726FE15B7 /* libPods-Reverser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reverser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8B1AA2F073F6BC7C4E46EA /* Pods-Reverser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reverser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reverser/Pods-Reverser.release.xcconfig"; sourceTree = "<group>"; };
+		4FFD115C00EE047047AD562A /* Pods-Reverser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reverser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reverser/Pods-Reverser.debug.xcconfig"; sourceTree = "<group>"; };
+		58C117BB5AAE73665003FD14 /* Pods-ReverserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReverserUITests/Pods-ReverserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		71AE8DACF282DD56F7C42487 /* libPods-ReverserUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReverserUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C88800FAA596F30A649B402 /* Pods-ReverserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverserTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReverserTests/Pods-ReverserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A50DBA3CAA8A899F50530C3F /* Pods-ReverserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReverserUITests/Pods-ReverserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A667240427127D8AAB67847F /* Pods-ReverserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReverserTests/Pods-ReverserTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCACCE43FEA1CC276CB88777 /* libPods-ReverserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReverserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B71905898D9915CC0EE3CEC /* libPods-Reverser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DD7FD34645FEDE58B5E7A6 /* libPods-ReverserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +93,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91B037CF3EFDB0102880E8A3 /* libPods-ReverserUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B710FFF77F4FE4188A0046 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FFD115C00EE047047AD562A /* Pods-Reverser.debug.xcconfig */,
+				4A8B1AA2F073F6BC7C4E46EA /* Pods-Reverser.release.xcconfig */,
+				8C88800FAA596F30A649B402 /* Pods-ReverserTests.debug.xcconfig */,
+				A667240427127D8AAB67847F /* Pods-ReverserTests.release.xcconfig */,
+				58C117BB5AAE73665003FD14 /* Pods-ReverserUITests.debug.xcconfig */,
+				A50DBA3CAA8A899F50530C3F /* Pods-ReverserUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0C270A5C1E6196310099EBB0 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +120,8 @@
 				0C270A811E6196320099EBB0 /* ReverserTests */,
 				0C270A8C1E6196320099EBB0 /* ReverserUITests */,
 				0C270A661E6196310099EBB0 /* Products */,
+				06B710FFF77F4FE4188A0046 /* Pods */,
+				23F2F5D519F3BDA4283D2D4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +197,16 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		23F2F5D519F3BDA4283D2D4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2016C10A347E437726FE15B7 /* libPods-Reverser.a */,
+				FCACCE43FEA1CC276CB88777 /* libPods-ReverserTests.a */,
+				71AE8DACF282DD56F7C42487 /* libPods-ReverserUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C270A921E6196320099EBB0 /* Build configuration list for PBXNativeTarget "Reverser" */;
 			buildPhases = (
+				E23BEA78A723044B993AEE75 /* [CP] Check Pods Manifest.lock */,
 				0C270A611E6196310099EBB0 /* Sources */,
 				0C270A621E6196310099EBB0 /* Frameworks */,
 				0C270A631E6196310099EBB0 /* Resources */,
+				C6F9A7533C6FAD9C3E06F07A /* [CP] Embed Pods Frameworks */,
+				366795E98FCCB73AEC8EB6C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C270A951E6196320099EBB0 /* Build configuration list for PBXNativeTarget "ReverserTests" */;
 			buildPhases = (
+				4FC8A15B7FA4708299CB7C83 /* [CP] Check Pods Manifest.lock */,
 				0C270A7A1E6196320099EBB0 /* Sources */,
 				0C270A7B1E6196320099EBB0 /* Frameworks */,
 				0C270A7C1E6196320099EBB0 /* Resources */,
+				4760E2FA5AC17F9A42A2CF21 /* [CP] Embed Pods Frameworks */,
+				DD6B08E3E6603251415BA12A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C270A981E6196320099EBB0 /* Build configuration list for PBXNativeTarget "ReverserUITests" */;
 			buildPhases = (
+				175F12132BA748BB98F6A586 /* [CP] Check Pods Manifest.lock */,
 				0C270A851E6196320099EBB0 /* Sources */,
 				0C270A861E6196320099EBB0 /* Frameworks */,
 				0C270A871E6196320099EBB0 /* Resources */,
+				11A38D21E70296EE96F21EBB /* [CP] Embed Pods Frameworks */,
+				33E2E8A2928942B48F1D5680 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +344,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A38D21E70296EE96F21EBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverserUITests/Pods-ReverserUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		175F12132BA748BB98F6A586 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33E2E8A2928942B48F1D5680 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverserUITests/Pods-ReverserUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		366795E98FCCB73AEC8EB6C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reverser/Pods-Reverser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4760E2FA5AC17F9A42A2CF21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverserTests/Pods-ReverserTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC8A15B7FA4708299CB7C83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F9A7533C6FAD9C3E06F07A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reverser/Pods-Reverser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6B08E3E6603251415BA12A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverserTests/Pods-ReverserTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23BEA78A723044B993AEE75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C270A611E6196310099EBB0 /* Sources */ = {
@@ -451,6 +638,7 @@
 		};
 		0C270A931E6196320099EBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FFD115C00EE047047AD562A /* Pods-Reverser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CJSAKGXT5B;
@@ -463,6 +651,7 @@
 		};
 		0C270A941E6196320099EBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8B1AA2F073F6BC7C4E46EA /* Pods-Reverser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CJSAKGXT5B;
@@ -475,6 +664,7 @@
 		};
 		0C270A961E6196320099EBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C88800FAA596F30A649B402 /* Pods-ReverserTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ReverserTests/Info.plist;
@@ -487,6 +677,7 @@
 		};
 		0C270A971E6196320099EBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A667240427127D8AAB67847F /* Pods-ReverserTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ReverserTests/Info.plist;
@@ -499,6 +690,7 @@
 		};
 		0C270A991E6196320099EBB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C117BB5AAE73665003FD14 /* Pods-ReverserUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ReverserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -510,6 +702,7 @@
 		};
 		0C270A9A1E6196320099EBB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50DBA3CAA8A899F50530C3F /* Pods-ReverserUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ReverserUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

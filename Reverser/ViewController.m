@@ -47,12 +47,13 @@ const NSString *SBDGreetingMessage = @"Hello";
     [self.view addSubview:self.greetingLabel];
 
     NSArray * horizontalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"H:|-20-[greetingLabel]"
+                                       constraintsWithVisualFormat:@"H:|-30-[greetingLabel(100)]-20-|"
                                        options:NSLayoutFormatDirectionLeadingToTrailing
                                        metrics:nil
                                        views:subviews];
+//    NSLayoutConstraint *center = [NSLayoutConstraint c]
     NSArray * verticalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"V:|-50-[greetingLabel]-[sourceStringField]"
+                                       constraintsWithVisualFormat:@"V:|-30-[greetingLabel(30)]-30-[sourceStringField]"
                                        options:NSLayoutFormatDirectionLeadingToTrailing
                                        metrics:nil
                                        views:subviews];
