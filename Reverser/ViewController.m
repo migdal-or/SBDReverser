@@ -10,12 +10,10 @@
 #import "SBDReverser.h"
 #import "SBDUpperCase.h"
 
-const NSString *SBDTextFieldDefault = @"Enter string";
-const NSString *SBDGreetingMessage = @"Hello";
+const NSString *kTextFieldDefault = @"Enter string";
 
 @interface ViewController ()<UITextFieldDelegate>
 
-@property(nonatomic, strong) UILabel *greetingLabel;
 @property(nonatomic, weak) IBOutlet UITextField *sourceStringField;
 @property(nonatomic, weak) IBOutlet UILabel *resultLabel;
 @property(nonatomic, weak) IBOutlet UIButton *reverseButton;
@@ -30,13 +28,7 @@ const NSString *SBDGreetingMessage = @"Hello";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.reverseButton.layer.cornerRadius = CGRectGetWidth(self.reverseButton.frame)/2;
-    self.sourceStringField.text = [SBDTextFieldDefault copy];
-    
-    self.greetingLabel = [UILabel new];
-    self.greetingLabel.text = SBDGreetingMessage;
-    self.greetingLabel.textColor = [UIColor whiteColor];
-    
-    [self.view addSubview:self.greetingLabel];
+    self.sourceStringField.text = [kTextFieldDefault copy];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,7 +72,7 @@ const NSString *SBDGreetingMessage = @"Hello";
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (textField.text.length == 0) {
         self.resultLabel.text = @"";
-        textField.text = [SBDTextFieldDefault copy]; // Перенос строки ниже условия сломает логику (можно использовать в кейсе)
+        textField.text = [kTextFieldDefault copy]; // Перенос строки ниже условия сломает логику (можно использовать в кейсе)
     }
 }
 
