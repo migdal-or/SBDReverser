@@ -30,13 +30,36 @@ const NSString *SBDGreetingMessage = @"Hello";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.reverseButton.layer.cornerRadius = CGRectGetWidth(self.reverseButton.frame)/2;
+    self.uppercaseButton.layer.cornerRadius = CGRectGetWidth(self.uppercaseButton.frame)/2;
+    
     self.sourceStringField.text = [SBDTextFieldDefault copy];
     
     self.greetingLabel = [UILabel new];
     self.greetingLabel.text = SBDGreetingMessage;
     self.greetingLabel.textColor = [UIColor whiteColor];
     
+    NSDictionary *subviews = @{
+                               @"greetingLabel":self.greetingLabel,
+                               @"sourceStringField":self.sourceStringField
+                               };
+    
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.greetingLabel];
+
+    NSArray * horizontalConstraints = [NSLayoutConstraint
+                                       constraintsWithVisualFormat:@"H:|-20-[greetingLabel]-20-|"
+                                       options:NSLayoutFormatDirectionLeadingToTrailing
+                                       metrics:nil
+                                       views:subviews];
+    NSArray * verticalConstraints = [NSLayoutConstraint
+                                       constraintsWithVisualFormat:@"V:|-20-[greetingLabel]-[sourceStringField]"
+                                       options:NSLayoutFormatDirectionLeadingToTrailing
+                                       metrics:nil
+                                       views:subviews];
+    
+    [self.view addConstraints:horizontalConstraints];
+    [self.view addConstraints:verticalConstraints];
+    [NSLayoutConstraint activateConstraints:self.view.constraints];
 }
 
 - (void)didReceiveMemoryWarning {
