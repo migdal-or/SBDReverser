@@ -43,16 +43,16 @@ const NSString *SBDGreetingMessage = @"Hello";
                                @"sourceStringField":self.sourceStringField
                                };
     
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    self.greetingLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.greetingLabel];
 
     NSArray * horizontalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"H:|-20-[greetingLabel]-20-|"
+                                       constraintsWithVisualFormat:@"H:|-20-[greetingLabel]"
                                        options:NSLayoutFormatDirectionLeadingToTrailing
                                        metrics:nil
                                        views:subviews];
     NSArray * verticalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"V:|-20-[greetingLabel]-[sourceStringField]"
+                                       constraintsWithVisualFormat:@"V:|-50-[greetingLabel]-[sourceStringField]"
                                        options:NSLayoutFormatDirectionLeadingToTrailing
                                        metrics:nil
                                        views:subviews];
@@ -66,7 +66,6 @@ const NSString *SBDGreetingMessage = @"Hello";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 #pragma mark - Actions
 
