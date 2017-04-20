@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SBDReverser.h"
 #import "SBDUpperCase.h"
+#import "Masonry.h"
 
 const NSString *SBDTextFieldDefault = @"Enter string";
 const NSString *SBDGreetingMessage = @"Hello";
@@ -38,29 +39,28 @@ const NSString *SBDGreetingMessage = @"Hello";
     self.greetingLabel.text = SBDGreetingMessage;
     self.greetingLabel.textColor = [UIColor whiteColor];
     
-    NSDictionary *subviews = @{
-                               @"greetingLabel":self.greetingLabel,
-                               @"sourceStringField":self.sourceStringField
-                               };
+//    NSDictionary *subviews = @{
+//                               @"greetingLabel":self.greetingLabel,
+//                               @"sourceStringField":self.sourceStringField
+//                               };
     
-    self.greetingLabel.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.greetingLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
     [self.view addSubview:self.greetingLabel];
 
-    NSArray * horizontalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"H:|-30-[greetingLabel(100)]-20-|"
-                                       options:NSLayoutFormatDirectionLeadingToTrailing
-                                       metrics:nil
-                                       views:subviews];
-//    NSLayoutConstraint *center = [NSLayoutConstraint c]
-    NSArray * verticalConstraints = [NSLayoutConstraint
-                                       constraintsWithVisualFormat:@"V:|-30-[greetingLabel(30)]-30-[sourceStringField]"
-                                       options:NSLayoutFormatDirectionLeadingToTrailing
-                                       metrics:nil
-                                       views:subviews];
+    [self.greetingLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.top.equalTo(self.view.mas_top).with.offset(40);
+        make.height.equalTo(@20);
+        make.width.lessThanOrEqualTo(@40);
+        make.bottom.equalTo(self.sourceStringField.mas_top);
+
+    } ];
     
-    [self.view addConstraints:horizontalConstraints];
-    [self.view addConstraints:verticalConstraints];
+    
     [NSLayoutConstraint activateConstraints:self.view.constraints];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
