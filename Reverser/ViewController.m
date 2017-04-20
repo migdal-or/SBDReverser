@@ -39,26 +39,40 @@ const NSString *SBDGreetingMessage = @"Hello";
     self.greetingLabel.text = SBDGreetingMessage;
     self.greetingLabel.textColor = [UIColor whiteColor];
     
-//    NSDictionary *subviews = @{
-//                               @"greetingLabel":self.greetingLabel,
-//                               @"sourceStringField":self.sourceStringField
-//                               };
-    
-//    self.greetingLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    
     [self.view addSubview:self.greetingLabel];
+    
+    [self.sourceStringField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(self.view.mas_leadingMargin);
+        make.rightMargin.equalTo(self.view.mas_rightMargin).with.offset(-20);
+    }];
 
     [self.greetingLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
         make.top.equalTo(self.view.mas_top).with.offset(40);
-        make.height.equalTo(@20);
+//        make.height.equalTo(@20);
         make.width.lessThanOrEqualTo(@40);
         make.bottom.equalTo(self.resultLabel.mas_top);
     } ];
     [self.resultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mas_topLayoutGuideBottom).with.offset(64);
-        
+        make.leading.equalTo(self.view.mas_leadingMargin);
+        make.trailing.equalTo(self.view.mas_trailingMargin);
     }];
+    [self.sourceStringField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.resultLabel.mas_bottom).with.offset(46);
+    }];
+    
+    [self.uppercaseButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.centerY.equalTo(self.view.mas_centerY);
+//        make.top.equalTo(self.resultLabel.mas_bottom).with.offset(-10);
+    }];
+    [self.reverseButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.uppercaseButton.mas_bottom).with.offset(30);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.bottom.equalTo(self.mas_bottomLayoutGuideTop).with.offset(-60);
+    }];
+    
     
     [NSLayoutConstraint activateConstraints:self.view.constraints];
     
